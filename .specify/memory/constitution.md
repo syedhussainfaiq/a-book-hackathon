@@ -1,55 +1,50 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A (initial version) → 1.0.0
+List of modified principles: N/A (initial version)
+Added sections: All principles and sections are newly added
+Removed sections: None
+Templates requiring updates: ✅ Updated (plan-template.md, spec-template.md, tasks-template.md) / ⚠ Pending (None)
+Follow-up TODOs: None
+-->
+
+# Unified Book Project with Integrated RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Precision in Tool Integration and Deployment
+All tools and technologies must be integrated with precision following specified configurations; Deployments must be accurate, reproducible, and adhere to the technology stack constraints (Docusaurus, GitHub Pages, Spec-Kit Plus, Claude Code, OpenAI Agents/ChatKit, FastAPI, Neon Postgres, Qdrant Free Tier)
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Usability for Technical End-Users
+The book and chatbot interface must be usable for users with AI/development background; All interfaces and documentation should be intuitive and accessible to the target audience
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Reproducibility
+All steps must be documented and executable; Every process should be repeatable by others following the provided instructions without ambiguity
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Innovation Through AI-Driven Tools
+Leverage AI-driven tools for content creation and interaction; Encourage innovative approaches to book authoring and chatbot functionality using AI capabilities
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Comprehensive Documentation and Testing
+Maintain comprehensive README and inline comments in code; Implement end-to-end functionality checks for book rendering and chatbot responses
 
-### [PRINCIPLE_6_NAME]
+### Technology Constraint Adherence
+Limit technologies to specified tools without additional frameworks unless justified; Maintain scope to single unified book with embedded chatbot and no external dependencies beyond those listed
 
+## Technology Stack Requirements
 
-[PRINCIPLE__DESCRIPTION]
+Book framework: Docusaurus with full deployment to GitHub Pages
+Content generation: Exclusive use of Spec-Kit Plus and Claude Code for writing and structuring
+Chatbot implementation: Built with OpenAI Agents/ChatKit SDKs, FastAPI backend, Neon Serverless Postgres for data storage, and Qdrant Cloud Free Tier for vector search
+Functionality: Chatbot must accurately respond to queries on book content, including context from user-selected text
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Success Criteria and Quality Assurance
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Book successfully deploys to GitHub Pages with all content accessible
+Chatbot embeds seamlessly and handles queries on full book content and selected text accurately
+Passes functionality review (e.g., sample queries yield correct, context-aware responses)
+Zero deployment errors or broken integrations detected
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all development practices for the Unified Book Project; All implementations must comply with the specified technology stack and architectural decisions; Amendments require documentation and team approval; All PRs must verify compliance with technology constraints and success criteria
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-01-16 | **Last Amended**: 2025-01-16
